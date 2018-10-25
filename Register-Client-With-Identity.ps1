@@ -8,29 +8,22 @@ else {
 }
 
 $identityUrl = "http://localhost/identity"
-$clientId = "catalog-service"
-$clientName = "Catalog Service"
-$scope = "dos/catalogs"
+$clientId = ""
+$clientName = ""
+$scope = ""
 $accessToken = ""
 
 $body = @"
 {
-    "accessTokenLifetime": 1200,
     "allowedGrantTypes": [
-        "implicit"
+        "client_credentials"
     ],
-    "allowOfflineAccess": true,
     "allowedScopes": [
         "$scope"
     ],
-    "claims": [
-        "name",
-        "email",
-        "role",
-        "groups"
-    ],
     "clientId": "$clientId",
-    "clientName": "$clientName"
+    "clientName": "$clientName",
+    "enabled": true
 }
 "@
 

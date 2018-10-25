@@ -8,9 +8,11 @@ else {
 }
 
 $identityUrl = "http://localhost/identity"
-$clientId = "fabric-installer"
-$scope = "fabric/identity.manageresources"
+
+$clientId = ""
+$scope = ""
 $secret = ""
+
 
 Write-Host "Retrieving access token from Fabric.Identity"
 
